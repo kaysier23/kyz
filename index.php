@@ -4,7 +4,7 @@ $json = file_get_contents('https://jsssson.herokuapp.com/json.php');
 $data = json_decode($json,true);
 $list = $data['profile'];
 ?>
-<h1> BTS members </h1>
+<h1> IZ*ONE PROFILE </h1>
 <?php
 foreach($list as $value){
     ?>
