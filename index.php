@@ -9,15 +9,14 @@ $list = $data['profile'];
 foreach($list as $value){
     ?>
 <ul>
-            <h2>$Stage_Name</h2>
-              <ul>
-                  <li>Rank: $Rank</li>
-                  <li>Birth_Name: $Birth_Name </li>
-                  <li>Birthday:$Birthday </li>
-                  <li>Position: $Position</li>
-              </ul>
-          </ul>
- 
+<h2> <?php echo $value['Stage_Name'];?> </h2>
+    <ul>
+        <li>Rank <?php echo $value['Rank'];?></li>
+        <li>Birth_Name: <?php echo $value['Birth_Name'];?></li>
+        <li>Birthday: <?php echo $value['Birthday'];?></li>
+        <li>Position: <?php echo $value['Position'];?></li>
+    </ul>
+</ul>
 <?php
 }
 ?>
